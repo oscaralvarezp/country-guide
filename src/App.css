@@ -1,0 +1,56 @@
+/* Dark & Light Theme Clases */
+.light-theme {
+  --cards-buttons-color: hsl(0, 0%, 100%);
+  --bgcolor-body: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+  background-color: var(--bgcolor-body);
+  color: var(--text-color);
+  transition: 0.5s ease-in;
+}
+
+.dark-theme {
+  --bgcolor-body: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+  --cards-buttons-color: hsl(209, 23%, 22%);
+  background-color: var(--bgcolor-body);
+  color: var(--text-color);
+  transition: 0.5s ease-in;
+} 
+
+.dark-theme a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.light-theme a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.main-container {
+  max-width: 1440px;
+  min-height: 100vh;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.spinner {
+  margin-inline: auto;
+  border: 4px solid var(--bgcolor-body);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: rgb(0, 67, 252);
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
